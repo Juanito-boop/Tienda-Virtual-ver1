@@ -12,6 +12,7 @@
 body {
   margin: 0;
   font-family: 'Inconsolata';
+  background-image: url(../img/brown-wooden-flooring.jpg);
 }
 img {
   display: block;
@@ -21,6 +22,9 @@ img {
   height: 30px;
   width: 30px;
 }
+.main-nav {
+  display: none;
+}
 .main-header {
   padding: 0 20px;
 }
@@ -28,16 +32,18 @@ img {
   text-align: center;
   font-size: 2.5em;
   margin: 10px 0;
-  color: #454546;
+  color: #ffffff;
   font-family: 'poppins';
-}
-.main-nav {
-  display: none;
 }
 .main-header__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.main-header__txt {
+  font-size: 1em;
+  color: #ffffff;
+  font-family: 'poppins';
 }
 .icon-menu {
   font-size: 1.5em;
@@ -48,14 +54,15 @@ img {
 .main-header__btn {
   display: block;
   padding: 10px 20px;
-  color: #454546;
-  border: 1px solid #454546;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   text-decoration: none;
 }
+
 .main-header__input {
   display: block;
   padding: 10px;
-  width: 50%;
+  width: 80%;
 }
 .main {
   padding: 0 20px;
@@ -160,7 +167,10 @@ img {
 /*Estilos de productos*/
 .container-products {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-auto-flow: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
   grid-gap: 20px;
 }
 .product {
